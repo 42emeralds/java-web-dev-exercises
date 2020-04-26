@@ -13,11 +13,11 @@ public class Characters {
         HashMap<Character, Integer> charCount  = new HashMap<>();
         char[] charactersInString = hiddenFigures.toCharArray();
 
-        for (char c : charactersInString) {
-            if (!charCount.containsKey(c)) {
-                charCount.put(c, 1);
+        for (char i : charactersInString) {
+            if (!charCount.containsKey(i)) {
+                charCount.put(i, 1);
             } else {
-                charCount.put(c, charCount.get(c) + 1);
+                charCount.put(i, charCount.get(i) + 1);
             }
         }
 
